@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Simple Weather</title>
+<style>
+  :root { --bg: #F6F4EF; --ink: #2A251F; --subtle: rgba(42, 37, 31, 0.62); --hairline: rgba(0, 0, 0, 0.08); --surface: #FFFFFF; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6; font-size: 17px;
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  }
+  .wrap { max-width: 520px; padding: 32px 24px; text-align: center; }
+  h1 { font-size: 34px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 6px; }
+  p.tag { color: var(--subtle); margin: 0 0 32px; }
+  .links { display: flex; flex-direction: column; gap: 12px; }
+  a.card {
+    display: block; background: var(--surface); border: 1px solid var(--hairline);
+    border-radius: 14px; padding: 16px 18px; text-decoration: none; color: var(--ink);
+    font-weight: 600;
+  }
+  a.card span { display: block; font-weight: 400; font-size: 14px; color: var(--subtle); margin-top: 2px; }
+  footer { margin-top: 40px; color: var(--subtle); font-size: 13px; }
+</style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Simple Weather</h1>
+    <p class="tag">A calm, honest read on whether it&rsquo;s a good day to be outside.</p>
+    <div class="links">
+      <a class="card" href="privacy.html">Privacy Policy<span>How the app handles your information</span></a>
+      <a class="card" href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Terms of Use<span>Apple&rsquo;s Standard End User License Agreement</span></a>
+    </div>
+    <footer>Weather data provided by Apple Weather.</footer>
+  </main>
+</body>
+</html>
